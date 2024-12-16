@@ -21,7 +21,7 @@ jobs:
         run: pip install scholarly matplotlib
 
       - name: Run script to fetch data and generate plot
-        run: python main.py
+        run: python citation_tracker.py
 
       - name: Commit and push changes
         run: |
