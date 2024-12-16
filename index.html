@@ -3,43 +3,138 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Dr Joe Roberts</title>
+<meta name="description" content="Dr Joe Roberts - Research in plant-insect interactions and sustainable pest management at Harper Adams University"/>
+<title>Dr Joe Roberts - Plant-Insect Interactions Researcher</title>
 <style>
+  :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --background-color: #f8f9fa;
+  }
+
   body {
-    max-width: 700px;
-    margin: 2rem auto;
-    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
   }
+
   h1, h2, h3 {
-    font-family: sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.2;
   }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  a:hover {
+    border-bottom-color: var(--accent-color);
+  }
+
   ul {
-    margin-left: 1.5rem;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+  }
+
+  .research-interests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .research-interest {
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
   }
 </style>
 </head>
 <body>
-<h1>Dr Joe Roberts</h1>
-<p>I research plant-insect interactions, teach applied entomology and focus on sustainable pest management in global agro-ecosystems at <a href="https://www.harper-adams.ac.uk/general/staff/profile/201284/Joe-Roberts/">Harper Adams University</a>.</p>
+<header>
+  <h1>Dr Joe Roberts</h1>
+  <p>I am a researcher and lecturer specializing in plant-insect interactions, sustainable pest management, and applied entomology at <a href="https://www.harper-adams.ac.uk/general/staff/profile/201284/Joe-Roberts/">Harper Adams University</a>. My work focuses on developing innovative solutions for agricultural pest management through the study of chemical ecology and insect behavior.</p>
+</header>
 
-<h2>About Me</h2>
-<ul>
-  <li>PhD in Invertebrate Chemical Ecology</li>
-  <li>Specialist in chemical ecology, insect behaviour and integrated pest management</li>
-  <li>Lecturer at Harper Adams University, teaching applied entomology and data science</li>
-</ul>
+<section class="section">
+  <h2>About Me</h2>
+  <ul>
+    <li>PhD in Invertebrate Chemical Ecology, with expertise in insect-plant interactions and behavioral analysis</li>
+    <li>Specialist in chemical ecology, insect behaviour, and the development of integrated pest management strategies</li>
+    <li>Lecturer at Harper Adams University, where I teach applied entomology and data science, bridging the gap between theoretical knowledge and practical applications</li>
+  </ul>
+</section>
 
-<h2>Research</h2>
-<p>
-I occasionally do some research.
-</p>
+<section class="section">
+  <h2>Research Interests</h2>
+  <div class="research-interests">
+    <div class="research-interest">
+      <h3>Chemical Ecology</h3>
+      <p>Investigating the chemical signals that mediate interactions between insects and their host plants.</p>
+    </div>
+    <div class="research-interest">
+      <h3>Sustainable Pest Management</h3>
+      <p>Developing environmentally friendly approaches to pest control in agricultural systems.</p>
+    </div>
+    <div class="research-interest">
+      <h3>Data Science in Agriculture</h3>
+      <p>Applying modern data analysis techniques to understand and predict pest population dynamics.</p>
+    </div>
+  </div>
+</section>
 
-<h2>Teaching</h2>
-<p>
-I collaborate on research projects related to sustainable pest management, insect population dynamics, and data-driven solutions for agriculture.  
-</p>
+<section class="section">
+  <h2>Teaching</h2>
+  <p>At Harper Adams University, I lead courses in applied entomology and data science, focusing on:</p>
+  <ul>
+    <li>Practical applications of entomological principles in agricultural settings</li>
+    <li>Modern data analysis techniques for agricultural research</li>
+    <li>Integration of sustainable pest management practices in commercial agriculture</li>
+  </ul>
+</section>
 
-<p>Publications, projects, and details available on request.</p>
+<footer>
+  <p>For a complete list of publications, ongoing research projects, and collaboration opportunities, please contact me through Harper Adams University.</p>
+</footer>
 </body>
 </html>
